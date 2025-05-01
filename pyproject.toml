@@ -21,3 +21,8 @@ work-inpark-tools = "work_inpark_tools:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "nbstripout>=0.8.1",
+]
