@@ -1,0 +1,8 @@
+{
+  "ignorePaths": [
+    ".gitignore",
+    "cspell.json",
+    "pyproject.toml",
+    "uv.loc"
+  ]
+}

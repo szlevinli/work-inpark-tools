@@ -1,0 +1,23 @@
+[project]
+name = "work-inpark-tools"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "levin", email = "3259963@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "ipython>=9.2.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+work-inpark-tools = "work_inpark_tools:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
