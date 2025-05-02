@@ -4,5 +4,9 @@
     "cspell.json",
     "pyproject.toml",
     "uv.loc"
+  ],
+  "words": [
+    "inpark",
+    "secho"
   ]
 }
