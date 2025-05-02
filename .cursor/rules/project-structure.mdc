@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 项目结构规范
+
+## 目录结构
+- `src/work_inpark_tools/` - 主要源代码目录
+  - `lib/` - 通用工具库，存放完全泛化且独立的功能模块
+    - 模块设计原则：
+      1. 通用性：支持最通用的使用场景
+      2. 独立性：不依赖特定数据结构或外部包
+      3. 最小依赖：优先使用标准库
+      4. 可扩展性：提供自定义接口
+  - `cli/` - 命令行工具实现
+- `notebooks/` - Jupyter notebooks 目录
+- `output/` - 输出文件目录
+
+## 代码组织
+- 通用功能模块放在 `lib` 目录
+- 特定业务逻辑放在对应的功能目录
+- 保持模块的独立性和可重用性
+
+## 示例
+[interactive_select.py](mdc:src/work_inpark_tools/lib/interactive_select.py) 是一个通用的交互式选择模块：
+- 完全泛化，支持任何类型的列表选择
+- 不依赖特定数据结构或外部包
+- 仅使用 Python 标准库
+- 通过自定义格式化函数支持各种数据类型

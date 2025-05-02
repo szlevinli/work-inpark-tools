@@ -1,0 +1,23 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Work Inpark Tools 项目概述
+
+这是一个 Python 工具集项目，主要用于处理工作中的各种自动化任务。
+
+## 项目结构
+- `src/work_inpark_tools/` - 主要源代码目录
+  - `cli/` - 命令行工具实现
+- `notebooks/` - Jupyter notebooks 目录
+- `output/` - 输出文件目录
+
+## 主要功能模块
+主要的功能实现在 [src/work_inpark_tools/cli/split_excel.py](mdc:src/work_inpark_tools/cli/split_excel.py) 中，这是一个用于分割 Excel 文件的工具。
+
+## 依赖管理
+项目使用 `pyproject.toml` 进行依赖管理，使用 `uv` 作为包管理工具。主要依赖包括：
+- pandas - 用于数据处理
+- typer - 用于构建命令行接口
+- openpyxl - 用于 Excel 文件处理

@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# CLI 工具说明
+
+## Excel 分割工具
+[split_excel.py](mdc:src/work_inpark_tools/cli/split_excel.py) 实现了 Excel 文件的分割功能：
+
+### 主要功能
+- 支持按指定列进行 Excel 文件分割
+- 可以指定输出目录
+- 支持选择特定的 Sheet 进行处理
+
+### 使用规范
+- 所有 CLI 工具都应使用 `typer` 库构建
+- 参数需要提供清晰的类型注解和帮助信息
+- 默认输出目录应位于项目根目录的 `output` 文件夹下
+
+### 开发规范
+- CLI 工具应提供详细的参数说明
+- 使用 `Annotated` 进行参数类型和元数据标注
+- 必须处理可能的异常情况
