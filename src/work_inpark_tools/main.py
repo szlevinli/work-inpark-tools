@@ -2,7 +2,7 @@ from typing import Annotated, Optional
 
 import typer
 
-from .cli.hello import world
+from .cli import split_excel
 
 try:
     from importlib.metadata import version
@@ -15,7 +15,7 @@ except ImportError:
 
 app = typer.Typer(name="inpark-tools", help="工具集")
 
-app.command(name="hello", help="问候命令示例")(world)
+app.command(name="split-excel", help="分割 Excel 文件")(split_excel)
 
 
 def version_callback(value: bool):
