@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-work-inpark-tools = "work_inpark_tools:main"
+inpark-tools = "work_inpark_tools:main"
 
 [build-system]
 requires = ["hatchling"]
