@@ -1,2 +1,6 @@
-def main() -> None:
-    print("Hello from work-inpark-tools!")
+from .main import app
+
+
+def main():
+    """CLI 入口点"""
+    app()
